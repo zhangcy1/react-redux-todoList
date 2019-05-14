@@ -1,4 +1,4 @@
-##基于 React 的 todoList
+## 基于 React 的 todoList
 简易版 todoList，create-react-app 做脚手架，Redux 做状态管理
 利用本地存储做数据的增、删、改、查
 
