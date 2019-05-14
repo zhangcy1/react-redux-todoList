@@ -14,6 +14,7 @@ class TodoList extends Component {
   }
 
   componentDidMount() {
+    // 初始化数据
     this.props.initInputValue();
   }
 
@@ -75,6 +76,7 @@ class TodoList extends Component {
   }
 }
 
+// 映射Redux全局的state到组件的props上
 const mapStateToProps = state => {
   return {
     inputValue: state.inputValue,
@@ -84,21 +86,27 @@ const mapStateToProps = state => {
   };
 };
 
+// 映射dispatch到props上
 const mapDispatchToProps = dispatch => {
   return {
-    deleteInputValue(params) {
-      dispatch(actionCreators.deleteInputValueAction(params));
-    },
+    // 初始化列表（从本地获取）
     initInputValue() {
       dispatch(actionCreators.initGetItemAction());
     },
+    // 删除
+    deleteInputValue(params) {
+      dispatch(actionCreators.deleteInputValueAction(params));
+    },
+    // 点击列表内容，输入框聚焦并回显数据
     clickList(index) {
       dispatch(actionCreators.clickListAction(index));
     },
+    // 修改数据
     updateListValueFun(e) {
       const value = e.target.value;
       dispatch(actionCreators.updateListValueAction(value));
     },
+    // 修改后，鼠标失去焦点保存数据
     saveListValue(index) {
       dispatch(actionCreators.saveListValueAction(index));
     }

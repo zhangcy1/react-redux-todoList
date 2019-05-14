@@ -34,24 +34,29 @@ class InputValue extends Component {
   }
 }
 
+// 映射Redux全局的state到组件的props上
 const mapStateToProps = state => {
   return {
     inputValue: state.inputValue
   };
 };
 
+// 映射dispatch到props上
 const mapDispatchToProps = dispath => {
   return {
+    // 获取输入框内容
     getInputValue(params) {
       const value = params.target.value;
       dispath(actionCreators.getInputValueAction(value));
     },
+    // 新增
     addInputValue(inputValue) {
       if (!inputValue) return message.warning("请输入新增内容");
       dispath(actionCreators.addInputValueAction());
     },
+    // 搜索
     selectInputValue(inputValue) {
-      dispath(actionCreators.selectInputValueAction(inputValue))
+      dispath(actionCreators.selectInputValueAction(inputValue));
     }
   };
 };
