@@ -12,7 +12,16 @@
     "react-redux": "^7.0.3",
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "lodash": "^4.17.14",
+    "lodash-amd": "^4.17.14",
+    "lodash-es": "^4.17.14",
+    "lodash._getnative": "^3.9.1",
+    "lodash.defaultsdeep": "^4.6.1",
+    "lodash.merge": "^4.6.2",
+    "lodash.mergewith": "^4.6.2",
+    "lodash.template": "^4.5.0",
+    "lodash.templatesettings": "^4.2.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
