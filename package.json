@@ -21,7 +21,8 @@
     "lodash.merge": "^4.6.2",
     "lodash.mergewith": "^4.6.2",
     "lodash.template": "^4.5.0",
-    "lodash.templatesettings": "^4.2.0"
+    "lodash.templatesettings": "^4.2.0",
+    "eslint-utils": ">=1.4.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
