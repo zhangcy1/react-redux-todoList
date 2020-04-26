@@ -14,6 +14,7 @@ class TodoList extends Component {
   }
 
   componentDidMount() {
+    // 注释测试
     // 初始化数据
     this.props.initInputValue();
   }
