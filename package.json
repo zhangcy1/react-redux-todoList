@@ -15,7 +15,7 @@
     "redux-thunk": "^2.3.0",
     "lodash": "^4.17.14",
     "lodash-amd": "^4.17.14",
-    "lodash-es": "^4.17.14",
+    "lodash-es": "^4.17.21",
     "lodash._getnative": "^3.9.1",
     "lodash.defaultsdeep": "^4.6.1",
     "lodash.merge": "^4.6.2",
